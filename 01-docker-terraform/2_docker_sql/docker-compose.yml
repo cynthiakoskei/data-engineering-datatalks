@@ -1,0 +1,25 @@
+services:
+  postgres: 
+    image: postgres:15
+    environment:
+      POSTGRES_USER: cynthia
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: data_engineering
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "cynthia"]
+      interval: 5s
+      retries: 5
+      start_period: 30s
+    restart: always
+
+
+docker run -it \
+ -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v d:/data-engineering/01-docker-terraform/2_docker_sql/ny_taxi_postgres-db:/var/lib/postgresql/data \
+  -p 5432:5432 \
+postgres:15 
+    
