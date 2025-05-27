@@ -4,12 +4,12 @@ I am building an end-to-end data pipeline from scratch using modern data enginee
 
 
 <p align="center">
-  <img width="100%" src="https://github.com/cynthiakoskei/data-engineering-datatalks/blob/main/Architecture%20Process.jpg" alt="Data Engineering Zoomcamp Overview">
+  <img width="100%" src="https://github.com/cynthiakoskei/data-engineering-datatalks/blob/main/Architecture%20Process.jpg" alt="Data Engineering Overview">
 </p>
 
-<p align="center">
-##Building an end-to-end data pipeline from scratch. 
-</p>
+
+##  **Building an end-to-end data pipeline from scratch.**
+
 
 ### **Process**
 
